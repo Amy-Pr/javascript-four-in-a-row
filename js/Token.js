@@ -1,8 +1,8 @@
 //possible properties: color, id matching player id, position?, status: played t/f
 class Token {
-    constructor() {
+    constructor(index, owner) {
         this.owner = this.owner; 
-        this.id = `token-${index}-${owner-id}`;
+        this.id = `token-${index}-${owner.id}`;
         this.dropped = false;
     }
     

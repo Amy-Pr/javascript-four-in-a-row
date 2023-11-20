@@ -1,6 +1,6 @@
 class Player {
 
-    constructor(name, id, color, active = false) {
+    constructor(name, id, color, active = false) { //last one is called a "default parameter"
         this.name = name;
         this.id = id;
         this.color = color;

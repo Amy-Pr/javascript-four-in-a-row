@@ -15,7 +15,7 @@ class Player {
   */
     createTokens(num) { //Don't need keyword "function" when this method is inside a class
         const tokens = [];
-        for (i = 1; i < num; i++) {
+        for (let i = 1; i < num; i++) {
             let token = new Token (i, this); //The loop index and the owning player object is passed to the Token constructor (first two arguments)
             tokens.push(token);
         }

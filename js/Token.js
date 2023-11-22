@@ -6,14 +6,6 @@ class Token {
         this.dropped = false;
     }
     
-    /** 
-     * Gets associated htmlToken.
-     * @return  {element}   Html element associated with token object.
-     */
-    get htmlToken() {
-        return document.getElementById(this.id);
-    }
-
 
     drawHTMLToken () {
         const token = document.createElement('div');
@@ -22,6 +14,14 @@ class Token {
         token.setAttribute('class', 'token');
         token.style.backgroundColor = this.owner.color; //accessing the color property in Player object
         
+    }
+
+     /** 
+     /*Gets associated htmlToken. Returns the specific 'div' element created above.
+     * @return  {element}   Html element associated with token object.
+     */
+     get htmlToken() {
+        return document.getElementById(this.id);
     }
 
     

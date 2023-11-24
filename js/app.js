@@ -17,5 +17,5 @@ startButton.addEventListener('click', () => { //startGame() relies on the contex
     document.querySelector('#play-area').style.opacity = '1';
 });
 
-const board = new Board ();
-console.log(board);
+// const board = new Board ();
+// console.log(board);

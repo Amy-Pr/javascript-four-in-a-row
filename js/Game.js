@@ -51,13 +51,13 @@ class Game {
 
 handleKeydown(e) {
     if (this.ready) {
-        if (e === ArrowLeft) {
-            //token moves left
+        if (e.key === ArrowLeft) {
+            this.activePlayer.activeToken.moveLeft();
         } 
-        if (e === ArrowRight) {
-            //token moves right
+        else if (e.key === ArrowRight) {
+            this.activePlayer.activeToken.moveRight(this.board.columns);
         } 
-        if (e === ArrowDown) {
+        else if (e.key === ArrowDown) {
             //token drops
         }
     }

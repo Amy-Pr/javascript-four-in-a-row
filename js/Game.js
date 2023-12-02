@@ -44,5 +44,24 @@ class Game {
 
     }
 
+    /**
+ * Branches code, depending on what key player presses
+ * @param   {Object}    e - Keydown event object
+ */
+
+handleKeydown(e) {
+    if (this.ready) {
+        if (e === ArrowLeft) {
+            //token moves left
+        } 
+        if (e === ArrowRight) {
+            //token moves right
+        } 
+        if (e === ArrowDown) {
+            //token drops
+        }
+    }
+}
+
     
 }

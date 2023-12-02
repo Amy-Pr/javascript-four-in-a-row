@@ -17,5 +17,13 @@ startButton.addEventListener('click', () => { //startGame() relies on the contex
     document.querySelector('#play-area').style.opacity = '1';
 });
 
+/** 
+ * Listen for keyboard presses
+ */
+
+document.addEventListener('keydown', function(event){
+    console.log(event.key); //outputs a string naming the pressed key 
+});
+
 // const board = new Board ();
 // console.log(board);

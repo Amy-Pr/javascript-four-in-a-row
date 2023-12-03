@@ -22,7 +22,7 @@ startButton.addEventListener('click', () => { //startGame() relies on the contex
  */
 
 document.addEventListener('keydown', function(event){
-    console.log(event.key); //outputs a string naming the pressed key 
+    //console.log(event.key); //outputs a string naming the pressed key 
     game.handleKeydown(event);
 });
 

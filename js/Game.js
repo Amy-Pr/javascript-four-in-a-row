@@ -69,6 +69,10 @@ playToken() {
     let targetColumn = spaces[activeToken.columnLocation];
     let targetSpace = null;
     
+    function handleDropCallback() {
+        game.updateGameState(activeToken, targetSpace);
+    }
+    
     for (let space of targetColumn) {
         if (space.token === null) {
             targetSpace = space;
@@ -79,11 +83,10 @@ playToken() {
     if (targetSpace !== null) {
         const game = this;
         game.ready = false;
-        activeToken.drop(targetSpace, function() {
-            game.updateGameState(activeToken, targetSpace);
-        });
+        activeToken.drop(targetSpace, handleDropCallback);//refactored because I dislike anonymous functions
     }
 }
+
 
 
 
